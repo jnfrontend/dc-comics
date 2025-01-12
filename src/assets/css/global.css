@@ -1,0 +1,263 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video {
+  max-width: 100%;
+}
+
+/* Fonts */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1,
+.section_title,
+div#ranking_tables h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* Main */
+body {
+  position: relative;
+  background-color: white;
+  letter-spacing: 0.4px;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  padding: 0 20px;
+  background-color: white;
+}
+
+header h1,
+.section_title {
+  background: white;
+  font-size: 48px;
+  letter-spacing: 0.8px;
+  color: #212529;
+}
+div#ranking_tables h2 {
+  letter-spacing: 0.8px;
+}
+
+/* Header and Navigation */
+header h1 {
+  padding: 50px 20px 0px 20px;
+}
+
+/* Main Banner */
+section#banner {
+  position: relative;
+  margin-top: 45px;
+  z-index: 1;
+  height: 550px;
+  background-image: url("../images/DC.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Super Heroes */
+div#superheroes {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+div#superheroes h2,
+div#ranking_tables h2 {
+  text-align: center;
+}
+
+div#ranking_tables h2 {
+  margin-bottom: 10px;
+  padding: 12px;
+  color: #235384;
+  font-weight: 500;
+  font-size: 27.5px;
+}
+
+/* Ranking Tables */
+div#ranking_tables {
+  padding: 50px 0 60px 0;
+}
+
+div#ranking_tables .table_container {
+  padding: 15px 30px 30px 30px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+div#ranking_tables table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d9dfe2;
+  border-radius: 8px;
+  overflow: hidden;
+  border-top: none;
+  box-shadow: rgb(229 229 229) 0px 0px 20px 0px;
+}
+
+div#ranking_tables table tr {
+  background-color: white;
+}
+
+div#ranking_tables table tr th {
+  background-color: #235384;
+  font-weight: bold;
+  text-align: left;
+  padding: 18px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13.5px;
+  letter-spacing: 0.8px;
+}
+
+div#ranking_tables table th,
+div#ranking_tables table td {
+  padding: 14px 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f2f3;
+}
+
+div#ranking_tables table td {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+div#ranking_tables table tr:last-child td {
+  border-bottom: none;
+}
+
+/* (even/odd) */
+div#ranking_tables table tr:nth-of-type(even) {
+  background: #f9f9f9;
+}
+
+
+/* Other */
+.txt-l {
+  text-align: left;
+}
+.txt-c {
+  text-align: center;
+}
+
+.mt-40 {
+    margin-top: 50px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes animate-hero {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0.5em);
+  }
+}
+
+/* Responsive */
+@media screen and (min-width: 1025px) {
+    main {
+        min-height: 300px;
+    }
+  div#superheroes .card_container {
+    min-height: 625px;
+  }
+}
+
+@media (max-width: 1024px) {
+  div#ranking_tables {
+    padding: 50px 0 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  div#superheroes .card_container .card_content {
+    min-height: auto;
+  }
+  div#ranking_tables .table_container {
+    padding: 0;
+  }
+  div#ranking_tables h2 {
+    border: 1px solid #d9dfe2;
+    border-radius: 8px 8px 0 0;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 0;
+  }
+  div#ranking_tables table {
+    border-radius: 0 0 8px 8px;
+  }
+  header h1,
+  .section_title {
+    text-align: center;
+  }
+  footer {
+    padding: 5% 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1,
+  .section_title {
+    font-size: 42px;
+  }
+}
+
+
+/* Super Heroes and Ranking Tables */
+div#superheroes,
+div#ranking_tables {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+div#superheroes .card_container,
+div#ranking_tables .table_container {
+  flex-grow: 1;
+  margin: 10px;
+}
+
+div#superheroes .card_container {
+  width: calc(100% * (1 / 4) - 20px);
+}
+
+div#ranking_tables .table_container {
+  width: calc(100% * (1 / 2) - 20px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  div#superheroes .card_container {
+    width: calc(100% * (1 / 2) - 20px);
+  }
+
+  div#ranking_tables .table_container {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  div#superheroes .card_container {
+    width: calc(100% - 20px);
+  }
+}

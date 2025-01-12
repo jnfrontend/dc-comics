@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
-import Layout from "../../layouts/Layout.astro";
+import SubLayout from "../../layouts/SubLayout.astro";
+
 const { superhero } = Astro.params;
 
 // Create a page routes and layout for the superheroes
@@ -17,7 +18,15 @@ export function getStaticPaths() {
     }));
 }
 ---
-<Layout>
-    <h1>This is: { superhero } page</h1>
-</Layout>
+<SubLayout>
+    <div class="txt-c">
+        <h1>This is: { superhero } page</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sit suscipit alias ipsa, aliquid officiis accusamus <br> 
+            reprehenderit, totam error, libero eligendi. Magnam voluptatem ratione dolorem laborum accusantium nulla est architecto.
+        </p>
+    </div>
+</SubLayout>    
+    
+
 
