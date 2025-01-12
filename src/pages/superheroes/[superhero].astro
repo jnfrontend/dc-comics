@@ -1,0 +1,23 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro";
+const { superhero } = Astro.params;
+
+// Create a page routes and layout for the superheroes
+export function getStaticPaths() {
+    const superhero = [
+        'the-flash',
+        'wonder-woman',
+        'superman',
+        'zatanna',
+    ];
+
+    return superhero.map((superhero) => ({
+        params: { superhero }
+    }));
+}
+---
+<Layout>
+    <h1>This is: { superhero } page</h1>
+</Layout>
+
