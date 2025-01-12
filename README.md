@@ -1,26 +1,43 @@
 # DC COMICS
 
-> 🧑‍🚀 **Astro Framework** - My First Project !! 
+> 🧑‍🚀 **Astro Framework** - My First Project !!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+![DC](https://github.com/user-attachments/assets/0ec4c409-027e-4c54-a28b-2ee10f06d037)
+
 
 ## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│    └── favicon.svg
 ├── src/
-│   ├── layouts/
-|   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│    ├── assets/
+│    │     ├── css/
+│    │     ├── images/
+│    ├── components/
+│    │     ├── css/
+│    │     ├── js/
+|    │     └── Banner.astro
+│    │     └── Cards.astro
+│    │     └── Footer.astro
+│    │     └── Header.astro
+│    │     └── Navbar.astro  
+│    ├── layouts/
+|    │     └── BaseLayout.astro
+│    │     └── SubLayout.astro  
+│    └── pages/
+│          ├── superheroes/
+│          │     └── the-flash.astro
+│          │     └── wonder-woman.astro
+│          │     └── superman.astro
+│          │     └── zatanna.astro
+│          └── index.astro
+│          └── movies.astro
+│          └── characters.astro
+│          └── comics.astro
 └── package.json
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
 ## 🧞 Commands
 
