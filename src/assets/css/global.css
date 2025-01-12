@@ -177,9 +177,6 @@ div#ranking_tables table tr:nth-of-type(even) {
     main {
         min-height: 300px;
     }
-  div#superheroes .card_container {
-    min-height: 625px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -189,9 +186,6 @@ div#ranking_tables table tr:nth-of-type(even) {
 }
 
 @media (max-width: 768px) {
-  div#superheroes .card_container .card_content {
-    min-height: auto;
-  }
   div#ranking_tables .table_container {
     padding: 0;
   }
@@ -231,14 +225,9 @@ div#ranking_tables {
   margin-right: -10px;
 }
 
-div#superheroes .card_container,
 div#ranking_tables .table_container {
   flex-grow: 1;
   margin: 10px;
-}
-
-div#superheroes .card_container {
-  width: calc(100% * (1 / 4) - 20px);
 }
 
 div#ranking_tables .table_container {
@@ -247,17 +236,7 @@ div#ranking_tables .table_container {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  div#superheroes .card_container {
-    width: calc(100% * (1 / 2) - 20px);
-  }
-
   div#ranking_tables .table_container {
-    width: calc(100% - 20px);
-  }
-}
-
-@media (max-width: 768px) {
-  div#superheroes .card_container {
     width: calc(100% - 20px);
   }
 }
