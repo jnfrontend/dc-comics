@@ -60,7 +60,7 @@ section#banner {
   margin-top: 45px;
   z-index: 1;
   height: 550px;
-  background-image: url("../images/DC.png");
+  background-image: url("/images/DC.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

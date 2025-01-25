@@ -1,5 +1,5 @@
 const hostAddress = window.location.origin,
-assetsDirectoryIMGs = "assets/images",
+assetsDirectoryIMGs = "images",
 heroSubdirectory = "superheroes";
 
 document.addEventListener("DOMContentLoaded",() => {
@@ -29,7 +29,7 @@ const suerpheroCard = `
   <div class="card_container">
       <a href="${hostAddress}/${heroSubdirectory}/${heroPath}">
           <div class="card_hero">
-              <img src="${hostAddress}/src/${assetsDirectoryIMGs}/superheroes/${heroPath}.png" class="card_hero_img" alt="${hero}" fetchpriority="high">
+              <img src="${hostAddress}/${assetsDirectoryIMGs}/superheroes/${heroPath}.png" class="card_hero_img" alt="${hero}" fetchpriority="high">
               <h2 class="card_hero_name">${hero}</h2>
           </div>
           <div class="card_content">
