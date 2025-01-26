@@ -1,4 +1,4 @@
-const hostAddress = window.location.origin,
+const hostAddress = window.location.origin + '/dc-comics',
 assetsDirectoryIMGs = "images",
 heroSubdirectory = "superheroes";
 
