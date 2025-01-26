@@ -1,4 +1,4 @@
-const hostAddress = window.location.origin + '/dc-comics',
+const hostAddress = `${import.meta.env.BASE_URL}`,
 assetsDirectoryIMGs = "images",
 heroSubdirectory = "superheroes";
 
