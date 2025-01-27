@@ -10,11 +10,11 @@
 ```text
 /
 ├── public/
+│    ├── images/
 │    └── favicon.svg
 ├── src/
 │    ├── assets/
 │    │     ├── css/
-│    │     ├── images/
 │    ├── components/
 │    │     ├── css/
 │    │     ├── js/
